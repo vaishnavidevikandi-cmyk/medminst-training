@@ -1,10 +1,3 @@
-"""
-train.py — Train SmallCNN on PneumoniaMNIST with checkpoint/resume.
-
-Examples:
-    python src/train.py --config configs/default.yaml
-    python src/train.py --config configs/default.yaml --resume checkpoints/last.pt
-"""
 import argparse
 import os
 import numpy as np

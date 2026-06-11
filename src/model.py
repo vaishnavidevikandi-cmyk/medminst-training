@@ -1,11 +1,3 @@
-"""
-model.py — A small CNN sized for 28x28 grayscale binary classification.
-
-Deliberately compact: PneumoniaMNIST is a low-resolution, two-class task with a
-CPU-only constraint, so a large or pretrained backbone would add cost and
-overfitting risk without a real accuracy payoff. Two conv blocks pull out local
-features; a small classifier head maps them to the two output logits.
-"""
 import torch
 import torch.nn as nn
 

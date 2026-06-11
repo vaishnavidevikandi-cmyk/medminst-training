@@ -1,11 +1,3 @@
-"""
-data.py — Build PneumoniaMNIST DataLoaders and training class weights.
-
-Wraps the MedMNIST dataset in torchvision transforms (tensor + normalization)
-and PyTorch DataLoaders. Also computes inverse-frequency class weights from the
-TRAIN split only, so the ~3:1 pneumonia imbalance documented in the README can
-be corrected in the loss without leaking val/test statistics.
-"""
 import numpy as np
 import torch
 from torchvision import transforms

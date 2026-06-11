@@ -1,14 +1,3 @@
-"""
-config.py — Central training configuration.
-
-Every hyperparameter and path the pipeline uses lives here as one dataclass.
-Defaults can be overridden by a YAML file (configs/*.yaml), and the resolved
-config can be written back to disk so each run records the exact settings it
-trained with. That captured file is what makes a run reproducible afterwards.
-
-Quick check:
-    python src/config.py
-"""
 from dataclasses import dataclass, asdict
 import os
 import yaml

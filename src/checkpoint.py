@@ -1,12 +1,3 @@
-"""
-checkpoint.py — Save and restore full training state.
-
-A checkpoint here is more than model weights: it captures the optimizer state,
-the epoch index, and the best validation metric seen so far. That is the
-difference between "load a model for inference" and "resume training exactly
-where it stopped" — the latter is what makes a long run survivable across a
-crash, a preempted instance, or a wall-clock limit.
-"""
 import os
 import torch
 

@@ -1,13 +1,3 @@
-"""
-reproducibility.py — Seed every RNG the pipeline touches.
-
-PyTorch training draws randomness from three independent generators (Python's
-`random`, NumPy, and torch), and CUDA adds non-deterministic kernels on top.
-Seeding only one of them is a common mistake that leaves runs irreproducible.
-This module seeds all of them from a single number and can optionally force
-deterministic algorithms — at a documented speed cost — so a run can be
-replayed exactly.
-"""
 import os
 import random
 import numpy as np

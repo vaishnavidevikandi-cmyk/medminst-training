@@ -1,13 +1,3 @@
-"""
-explore_data.py — Download and summarize the PneumoniaMNIST dataset.
-
-Prints task type, image size, split sizes, and class distribution so we can
-document the dataset and surface its class imbalance.
-
-Run from the project root:
-    python src/explore_data.py
-"""
-
 import os
 import numpy as np
 from medmnist import INFO, PneumoniaMNIST
