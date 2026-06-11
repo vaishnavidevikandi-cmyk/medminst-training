@@ -1,0 +1,20 @@
+# configs/default.yaml
+# Overrides for the defaults defined in src/config.py. Any field left out here
+# falls back to the dataclass default. Committed on purpose so a reviewer can
+# see — and reproduce — the exact settings this pipeline is meant to run with.
+
+dataset: pneumoniamnist
+data_dir: data
+num_classes: 2
+
+epochs: 10
+batch_size: 128
+lr: 0.001
+weight_decay: 0.0
+use_class_weights: true
+
+num_workers: 0
+
+seed: 42
+
+checkpoint_dir: checkpoints
