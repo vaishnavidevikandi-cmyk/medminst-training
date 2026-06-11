@@ -14,11 +14,13 @@ import torch
 def save_checkpoint(path, model, optimizer, epoch, best_metric):
     """Write full training state to `path` (creating parent dirs as needed)."""
     os.makedirs(os.path.dirname(path), exist_ok=True)
+    # Store metrics as native Python types so checkpoints load under
+    # torch.load's secure weights_only=True default (PyTorch >= 2.6).
     state = {
         "model_state": model.state_dict(),
         "optimizer_state": optimizer.state_dict(),
-        "epoch": epoch,
-        "best_metric": best_metric,
+        "epoch": int(epoch),
+        "best_metric": float(best_metric),
     }
     torch.save(state, path)
 
