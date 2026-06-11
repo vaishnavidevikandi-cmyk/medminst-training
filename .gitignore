@@ -1,0 +1,24 @@
+# Virtual environment
+.venv/
+
+# Python bytecode caches 
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Datasets 
+data/
+
+# Model artifacts
+checkpoints/
+*.pth
+*.ckpt
+
+# Logs and run outputs
+logs/
+*.log
+
+# Editor and OS cruft
+.vscode/
+.DS_Store
+Thumbs.db
