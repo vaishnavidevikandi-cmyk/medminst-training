@@ -6,12 +6,18 @@ checkpoint/resume support, reproducibility controls, and a lightweight
 responsible-AI governance package.
 
 > **Status:** work in progress.
-#test
 ## Project structure
 _To be completed._
 
 ## Environment setup
-_To be completed._
+```bash
+# 1. Create and activate a virtual environment
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1        # Windows PowerShell
+
+# 2. Install dependencies (CPU-only PyTorch)
+pip install -r requirements.txt --extra-index-url https://download.pytorch.org/whl/cpu
+```
 
 ## Usage
 ### Train
