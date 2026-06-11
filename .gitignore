@@ -10,7 +10,7 @@ __pycache__/
 data/
 
 # Model artifacts
-checkpoints/
+checkpoints*/
 *.pth
 *.ckpt
 
